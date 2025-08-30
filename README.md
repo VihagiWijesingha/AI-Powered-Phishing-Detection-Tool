@@ -3,7 +3,7 @@
 ## How to Run
 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/<your-username>/<your-repo>.git 
 cd ai-phishing-detector
 ```
 2. Create a virtual environment
