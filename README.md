@@ -32,4 +32,9 @@ python ai_phishing_detector/app.py
 
 ---
 
+## Preview
+
+<img width="893" height="637" alt="image" src="https://github.com/user-attachments/assets/b6dad3ae-aede-4c94-b434-c60b42990395" />
+
+
 
