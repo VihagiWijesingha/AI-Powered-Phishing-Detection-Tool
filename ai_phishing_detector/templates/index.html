@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-Powered Phishing Detector</title> 
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <div class="page">
+    <div class="container card">
+      <header class="header">
+        <h1>AI-Powered Phishing Detector</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i data-lucide="moon" class="icon"></i>
+        </button>
+      </header>
+
+      <p class="sub">Paste the content of a suspicious email, SMS, or voice call transcript below for AI analysis.</p>
+
+      <div class="radio-group">
+        <label><input type="radio" name="type" value="email" checked> Email</label>
+        <label><input type="radio" name="type" value="sms"> SMS</label>
+        <label><input type="radio" name="type" value="voice"> Voice Call Transcript</label>
+      </div>
+
+      <div class="textarea-wrapper">
+        <textarea id="content" rows="10" placeholder="Paste your email/SMS/voice call transcript content here..."></textarea>
+        <button id="clear-btn" class="clear-btn" title="Clear">✕</button>
+      </div>
+
+      <div class="button-group">
+        <button class="btn" id="load-example">Load Example</button>
+        <button class="btn primary" id="analyze-btn">Analyze Content</button>
+      </div>
+
+      <!-- RESULT -->
+      <section id="result" class="result card" aria-live="polite"></section>
+
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> This tool uses AI for analysis and is not foolproof. Always use caution with suspicious communications.
+      </p>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
